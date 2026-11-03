@@ -1,16 +1,102 @@
-# React + Vite
+📝 My Tasks — Список задач
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 🌐 Демо проекта
 
-Currently, two official plugins are available:
+[Открыть рабочую версию приложения](https://todo-list-pi-wheat-86.vercel.app)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Простое, современное и адаптивное веб-приложение для управления повседневными задачами.
 
-## React Compiler
+📌 О проекте
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+My Tasks — это веб-приложение To-Do List, которое помогает организовывать повседневные дела, отслеживать прогресс и эффективно управлять задачами.
 
-## Expanding the ESLint configuration
+Приложение имеет минималистичный интерфейс, удобное управление и автоматическое сохранение данных.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+✨ Функциональность
+➕ Добавление задач — создание новых задач с проверкой на пустой ввод.
+✅ Выполнение задач — возможность отмечать задачи как выполненные и возвращать их в активные.
+🗑️ Удаление задач — удаление ненужных задач из списка.
+💾 Сохранение данных — автоматическое сохранение задач в localStorage после каждого изменения.
+🔍 Фильтрация задач — просмотр всех, активных и выполненных задач.
+📊 Статистика — отображение общего количества задач, активных и выполненных.
+💬 Информативные состояния — сообщения при отсутствии задач или результатов фильтрации.
+📱 Адаптивный дизайн — удобное использование на компьютерах и мобильных устройствах.
+🛠️ Используемые технологии
+Технология	Назначение
+React 19	Создание пользовательского интерфейса
+JavaScript (ES6+)	Реализация логики приложения
+CSS3	Стилизация и адаптивная вёрстка
+Vite 8	Сборка и запуск проекта
+localStorage	Локальное сохранение данных
+ESLint	Проверка качества кода
+Используемые React Hooks
+useState — управление состоянием задач, фильтров и поля ввода.
+useEffect — автоматическая синхронизация задач с localStorage.
+📂 Структура проекта
+text
+todo-list/
+├── public/
+├── src/
+│   ├── App.jsx
+│   ├── App.css
+│   ├── main.jsx
+│   └── index.css
+├── index.html
+├── package.json
+├── eslint.config.js
+└── vite.config.js
+
+⚙️ Установка и запуск проекта
+Требования
+Node.js
+npm
+1. Клонирование репозитория
+bash
+git clone https://github.com/ruslan00798/todo-list.git
+
+2. Переход в папку проекта
+bash
+cd todo-list
+
+3. Установка зависимостей
+bash
+npm install
+
+4. Запуск проекта
+bash
+npm run dev
+
+
+После запуска откройте адрес, указанный в терминале (обычно http://localhost:5173).
+
+📦 Доступные команды
+Команда	Описание
+npm run dev	Запуск проекта в режиме разработки
+npm run build	Сборка проекта для production
+npm run preview	Предварительный просмотр production-сборки
+npm run lint	Проверка кода с помощью ESLint
+💾 Сохранение данных
+
+Для хранения задач используется браузерное хранилище localStorage.
+
+Все изменения автоматически сохраняются при обновлении списка задач. При повторном открытии приложения сохранённые задачи восстанавливаются.
+
+Для работы приложения не требуется сервер или база данных.
+
+🤖 Использование AI-инструментов
+
+В процессе разработки использовался ChatGPT в качестве AI-помощника.
+
+С его помощью:
+
+Прорабатывалась структура приложения.
+Разрабатывалась логика взаимодействия с задачами.
+Улучшался пользовательский интерфейс.
+Анализировался и дорабатывался программный код.
+🌐 Демо проекта
+
+Открыть рабочую версию приложения
+
+👨‍💻 О проекте
+
+Проект разработан в рамках выполнения тестового задания.
